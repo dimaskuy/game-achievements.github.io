@@ -26,19 +26,19 @@
                <h2>Streaming</h2>
               </a>
             </div>
-            <div class="link" data-aos="fade-right" data-aos-duration="600" data-aos-delay="50">
+            <div class="link">
               <a href="#">
               <img src="https://i.ibb.co/4FNQbwk/steam.png" alt="Steam">
                <h2 class="steam">Detail Permainan</h2>
                </a>
             </div>
-            <div class="link" data-aos="fade-right" data-aos-duration="600" data-aos-delay="100">
+            <div class="link">
               <a href="#">
               <img src="https://i.ibb.co/4d1HCps/upcoming.png" alt="Upcoming">
                <h2>Akan Datang</h2>
                </a>
             </div>
-            <div class="link" data-aos="fade-right" data-aos-duration="600" data-aos-delay="200">
+            <div class="link">
               <a href="#">
               <img src="https://i.ibb.co/JcDM9hm/library.png" alt="Library">
                <h2>Lihat Riwayat</h2>
@@ -128,5 +128,16 @@
     once: true
   });
 </script>
+
+   <!-- GSAP ANIMATION -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <!-- PLUGIN GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+    <script type="text/javascript">
+
+      gsap.from(.link', { duration: 1.5, x: '-100%', opacity: 0, ease: 'expo' });
+
+
+    </script>
 
 </html>
